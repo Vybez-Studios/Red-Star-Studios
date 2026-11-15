@@ -1,7 +1,7 @@
 const fmt=d=>d?new Date(d+"T00:00").toLocaleDateString("en-AU",{day:"numeric",month:"long",year:"numeric"}):"";
-const poster=i=>`<div class="poster"><img src="${esc(i.poster)}" alt="${esc(i.title)} poster" loading="lazy" onerror="this.remove()"><span>${esc(i.title)}</span></div>`;
+const poster=i=>`<div class="poster">${i.poster?`<img src="${esc(i.poster)}" alt="${esc(i.title)} poster" loading="lazy" onerror="this.remove()">`:""}<span>${esc(i.title)}</span></div>`;
 const card=(i,t)=>`<a class="card" href="item.html?t=${t}&id=${encodeURIComponent(i.slug)}">${poster(i)}<div class="cb"><h3>${esc(i.title)}</h3><p>${esc(i.tagline)}</p>
- <span class="tag">${t=="game"?esc(i.stage):"v"+esc(i.version)}</span>${t=="addon"?`<small>Updated ${esc(fmt(i.updated))}</small>`:""}</div></a>`;
+ ${t=="game"?`<span class="tag">${esc(i.stage)}</span>`:(i.version?`<span class="tag">v${esc(i.version)}</span>`:"")}${t=="addon"&&i.updated?`<small>Updated ${esc(fmt(i.updated))}</small>`:""}</div></a>`;
 const grid=(l,t)=>l.map(i=>card(i,t)).join("")||"<p>Nothing here yet.</p>";
 const sel=(id,o,all)=>`<select id="f-${id}" aria-label="${all}"><option value="">${all}</option>${o.map(x=>`<option>${x}</option>`).join("")}</select>`;
 
@@ -33,8 +33,8 @@ function item(d){
   document.title=i.title+" | "+d.studio.name;
   const btns=t=="game"
     ?(i.itch?`<a class="btn" href="${esc(i.itch)}">Download on itch.io</a>`:`<span class="btn off">Not available yet</span>`)
-    :(i.curseforge?`<a class="btn" href="${esc(i.curseforge)}">Download on CurseForge</a>`:"")+(i.mcpedl?` <a class="btn alt" href="${esc(i.mcpedl)}">Download on MCPEDL</a>`:"")+(d.studio.discord?` <a class="btn alt" href="${esc(d.studio.discord)}">Report bugs on Discord</a>`:"");
-  const meta=t=="game"?[["Release stage",i.stage],["Platforms",(i.platforms||[]).join(", ")]]:[["Version","v"+i.version],["Last updated",fmt(i.updated)],["Platform","Minecraft Bedrock"]];
+    :(i.curseforge?`<a class="btn" href="${esc(i.fileUrl||i.curseforge)}">Download${i.version?" v"+esc(i.version):""} on CurseForge</a>`:"")+(d.studio.discord?` <a class="btn alt" href="${esc(d.studio.discord)}">Report bugs on Discord</a>`:"");
+  const meta=t=="game"?[["Release stage",i.stage],["Platforms",(i.platforms||[]).join(", ")]]:[["Version","v"+i.version],["Last updated",fmt(i.updated)],["Minecraft version",i.mcVersion],["Downloads",i.downloads?Number(i.downloads).toLocaleString("en-AU"):""],["Platform","Minecraft Bedrock"]];
   meta.push(["Categories",(i.categories||[]).join(", ")]);
   $("#item").innerHTML=`<div class="ihead">${poster(i)}<div><h1>${esc(i.title)}</h1><p class="lead">${esc(i.tagline)}</p>
     <dl>${meta.filter(m=>m[1]).map(m=>`<dt>${m[0]}</dt><dd>${esc(m[1])}</dd>`).join("")}</dl><div class="btns">${btns}</div></div></div>

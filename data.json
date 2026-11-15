@@ -3,7 +3,7 @@
     "name": "Red Star Studios",
     "tagline": "Detailed models. Immersive worlds.",
     "about": "We are an indie Development Team dedicated to creating digital experiences. We specialize in creating detailed models, and immersion building mechanics. Here at RSS, every project starts with an idea, sketch or a raw concept, but the innovation is what makes these into reality.",
-    "discord": "https://discord.gg/Rq67DYaZF5",
+    "discord": "https://discord.gg/",
     "itch": "",
     "youtube": "",
     "contact": ""
@@ -33,59 +33,20 @@
       "title": "Fallout Westers Redux",
       "tagline": "Fallout comes to Minecraft Bedrock.",
       "poster": "images/credits-4.png",
-      "version": "1.0.0",
-      "updated": "2026-11-15",
+      "version": "1.2.103",
+      "updated": "2026-04-20",
       "categories": [
         "Action",
         "Sci-Fi",
         "Survival"
       ],
       "curseforge": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux",
-      "mcpedl": "",
       "description": "In the distant future after China had dropped bombs across the united states YOU the sole survivor must fight through ghouls and other beasts of the west, Fight alongside the BOS or fight against them. This is the Redux version of Fallout Westers!\n\nThis addon adds stuff from the video game franchise Fallout. Not everything is perfect and there might be bugs along the way but this is just the first public release so we are happy for you to report them in our discord! Link for it at the bottom.",
-      "features": [
-        "NONE"
-      ],
-      "screenshots": []
-    },
-    {
-      "title": "FWR Music Changer",
-      "slug": "fwr-music-changer",
-      "tagline": "Radio and Ambient music from Fallout",
-      "poster": "images/fwr-music-changer.png",
-      "version": "1.0.28",
-      "updated": "2026-04-20",
-      "categories": [
-        "Sci-Fi"
-      ],
-      "curseforge": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux",
-      "mcpedl": "",
-      "description": "This addon is intended to be used with Fallout Westers Redux.\n\nEver wanted your game to feel like the hit video game franchise \"Fallout\"? Well now you can! \n\nWith FWR Music Changer all ambient sounds will now use Fallout ones, if you are in the nether, overworld or just in the menu waiting for your game to load!\n\nAddon features changes to the vanilla records, now instead of playing vanilla ones they play songs that play on the radio in \"Fallout\". \n\nRecords have been renamed to Holotapes, and instead of being called by their vanilla counterparts they are named after the actual songs that play.",
-      "features": [
-        "RECORD CHANGE LIST:",
-        "5 - The End Of The World",
-        "11 - Anything Goes",
-        "13 - Take Me Home, Country Roads",
-        "blocks - Orange Coloured Sky",
-        "cat - Jingle Jangle Jingle",
-        "chirp - Big Iron",
-        "creator - Swinging On A Star",
-        "creator music box - A Kiss To Build A Dream On",
-        "far - Sixty Minute Man",
-        "Lava Chicken - Anthem of The Enclave",
-        "mall - Ain't That A Kick In The Head",
-        "ward - Maybe",
-        "mellohi - Dear Hearts And Gentle People",
-        "otherside - Atom Bomb Baby",
-        "pigstep - I Don't Want To Set The World On Fire",
-        "precipice - Midnight In A Madhouse",
-        "relic - Civilization (Bingo Bango Bongo)",
-        "stal - The Wanderer",
-        "strad - It's All Over But The Crying",
-        "tears - Don't Fence Me In",
-        "wait - Blue Moon"
-      ],
-      "screenshots": []
+      "features": [],
+      "screenshots": [],
+      "mcVersion": "26.0.02",
+      "downloads": 44624,
+      "fileUrl": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux/files/7953747"
     }
   ]
 }

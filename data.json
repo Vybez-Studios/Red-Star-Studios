@@ -32,7 +32,7 @@
       "slug": "fallout-westers-redux",
       "title": "Fallout Westers Redux",
       "tagline": "Fallout comes to Minecraft Bedrock.",
-      "poster": "images/credits-4.png",
+      "poster": "images/fallout-westers-redux.png",
       "version": "1.2.103",
       "updated": "2026-04-20",
       "categories": [
@@ -46,7 +46,8 @@
       "screenshots": [],
       "mcVersion": "26.0.02",
       "downloads": 44624,
-      "fileUrl": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux/files/7953747"
+      "fileUrl": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux/files/7953747",
+      "mcpedl": ""
     },
     {
       "title": "FWR Music Changer",

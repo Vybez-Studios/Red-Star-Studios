@@ -43,7 +43,9 @@
       "curseforge": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux",
       "mcpedl": "",
       "description": "In the distant future after China had dropped bombs across the united states YOU the sole survivor must fight through ghouls and other beasts of the west, Fight alongside the BOS or fight against them. This is the Redux version of Fallout Westers!\n\nThis addon adds stuff from the video game franchise Fallout. Not everything is perfect and there might be bugs along the way but this is just the first public release so we are happy for you to report them in our discord! Link for it at the bottom.",
-      "features": [],
+      "features": [
+        "NONE"
+      ],
       "screenshots": []
     }
   ]

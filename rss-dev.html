@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Developer panel</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="admin"><main class="admin"><h1>Developer panel</h1>
+<section id="login"><p>Sign in with your GitHub access token. It needs read and write access to "Contents" on the Red-Star-Studios repo. It stays in this browser tab only.</p>
+<div class="fld"><span>Access token</span><input id="tok" type="password" autocomplete="off"></div>
+<button class="btn" onclick="signin()">Sign in</button><p id="lmsg"></p></section>
+<section id="app" hidden><div id="tabs" class="tabs"></div><p id="msg" role="status"></p><div id="panel"></div>
+<p><button onclick="signout()">Sign out</button> <a href="index.html">View site</a></p></section></main>
+<script src="common.js"></script><script src="admin.js"></script></body></html>

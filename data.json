@@ -1,0 +1,42 @@
+{
+  "studio": {
+    "name": "Red Star Studios",
+    "tagline": "Detailed models. Immersive worlds.",
+    "about": "We are an indie Development Team dedicated to creating digital experiences. We specialize in creating detailed models, and immersion building mechanics. Here at RSS, every project starts with an idea, sketch or a raw concept, but the innovation is what makes these into reality.",
+    "discord": "https://discord.gg/",
+    "itch": "",
+    "youtube": "",
+    "contact": ""
+  },
+  "games": [
+    {
+      "slug": "street-cred",
+      "title": "Street-Cred",
+      "tagline": "Coming soon.",
+      "poster": "images/street-cred.png",
+      "stage": "Unreleased",
+      "categories": ["Action"],
+      "platforms": ["Windows"],
+      "itch": "",
+      "description": "Description coming soon.",
+      "features": [],
+      "screenshots": []
+    }
+  ],
+  "addons": [
+    {
+      "slug": "fallout-westers-redux",
+      "title": "Fallout Westers Redux",
+      "tagline": "Fallout comes to Minecraft Bedrock.",
+      "poster": "images/credits-4.png",
+      "version": "1.0.0",
+      "updated": "2026-11-15",
+      "categories": ["Action", "Sci-Fi", "Survival"],
+      "curseforge": "https://www.curseforge.com/minecraft-bedrock/addons/fallout-westers-redux",
+      "mcpedl": "",
+      "description": "In the distant future after China had dropped bombs across the united states YOU the sole survivor must fight through ghouls and other beasts of the west, Fight alongside the BOS or fight against them. This is the Redux version of Fallout Westers!\n\nThis addon adds stuff from the video game franchise Fallout. Not everything is perfect and there might be bugs along the way but this is just the first public release so we are happy for you to report them in our discord! Link for it at the bottom.",
+      "features": [],
+      "screenshots": []
+    }
+  ]
+}

@@ -69,9 +69,9 @@ async function del(i){
 function show(){
   $("#tabs").innerHTML=["games","addons","studio"].map(t=>`<button class="${t==tab?"on":""}" onclick="tab='${t}';editing=null;show()">${t[0].toUpperCase()+t.slice(1)}</button>`).join("");
   const box=$("#panel");
-  if(tab=="studio"){box.innerHTML=`<form onsubmit="return saveStudio()">${F.studio.map(f=>field(f,D.studio[f[0]])).join("")}<button class="btn">Save</button></form>`;return;}
+  if(tab=="studio"){box.innerHTML=`<form onsubmit="saveStudio();return false">${F.studio.map(f=>field(f,D.studio[f[0]])).join("")}<button class="btn">Save</button></form>`;return;}
   if(editing!==null){const it=editing==-1?{}:D[tab][editing];
-    box.innerHTML=`<form onsubmit="return saveItem()">${F[tab].map(f=>field(f,it[f[0]])).join("")}<button class="btn">Save</button> <button type="button" class="btn alt" onclick="editing=null;show()">Cancel</button></form>`;return;}
+    box.innerHTML=`<form onsubmit="saveItem();return false">${F[tab].map(f=>field(f,it[f[0]])).join("")}<button class="btn">Save</button> <button type="button" class="btn alt" onclick="editing=null;show()">Cancel</button></form>`;return;}
   box.innerHTML=`<button class="btn" onclick="editing=-1;show()">Add new</button>`+D[tab].map((it,i)=>`<div class="row"><b>${esc(it.title)}</b><span>${esc(it.stage||"v"+it.version)}</span><button onclick="editing=${i};show()">Edit</button><button onclick="del(${i})">Delete</button></div>`).join("");
 }
 if(tok)signin();

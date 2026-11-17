@@ -25,6 +25,25 @@
       "description": "Description coming soon.",
       "features": [],
       "screenshots": []
+    },
+    {
+      "title": "Scorched",
+      "slug": "scorched",
+      "tagline": "Unreleased.",
+      "poster": "images/your-paragraph-text-2.png",
+      "stage": "Unreleased",
+      "categories": [
+        "Action",
+        "FPS",
+        "Survival"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "itch": "",
+      "description": "",
+      "features": [],
+      "screenshots": []
     }
   ],
   "addons": [

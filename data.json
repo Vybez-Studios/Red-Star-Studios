@@ -16,7 +16,9 @@
       "poster": "images/street-cred.png",
       "stage": "Unreleased",
       "categories": [
-        "Action"
+        "TPS",
+        "Adventure",
+        "Sandbox"
       ],
       "platforms": [
         "Windows"

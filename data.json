@@ -46,6 +46,26 @@
       "description": "",
       "features": [],
       "screenshots": []
+    },
+    {
+      "title": "Project-Mantis",
+      "slug": "project-mantis",
+      "tagline": "Coming Soon",
+      "poster": "images/your-paragraph-text-4.png",
+      "stage": "Unreleased",
+      "categories": [
+        "Action",
+        "FPS",
+        "Sci-Fi",
+        "Puzzle"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "itch": "",
+      "description": "",
+      "features": [],
+      "screenshots": []
     }
   ],
   "addons": [
